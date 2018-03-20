@@ -1,13 +1,23 @@
+html, body {
+  padding: 0px;
+  margin: 0px;
+}
 .container{
     background-color: #1565C0;
     opacity: 0.8;
     height:100%;
-    background-image: url(gallery/07.jpg);
+    width:100%;
+    background-image: url(gallery/bg1.jpg);
     background-size:cover;
     background-blend-mode:exclusion;
+    position: absolute;
+}
+
+.container:hover{
+    transition: background-image 1s; /*added transition effects*/
 }
 .nav{
-    
+
     padding: 15px;
     font-size: 25px;
     font-family:montserrat;
@@ -27,7 +37,7 @@ hr.line{
 	box-shadow: 0 10px 10px -10px #FAFAFA inset;
 }
 .sections{
-    
+
     list-style-type: none;
     text-align: center;
      height: 500px;
@@ -42,7 +52,7 @@ hr.line{
     padding-bottom:25px;
     display: block;
     padding-left: 0px;
-       
+
 }
 a{
     text-decoration: none;
