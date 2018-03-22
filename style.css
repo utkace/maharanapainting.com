@@ -13,7 +13,7 @@ html, body {
     position: absolute;
 }
 
-.container:hover{
+.container:onclick{
     transition: background-image 1s; /*added transition effects*/
 }
 .nav{
