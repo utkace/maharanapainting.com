@@ -1,90 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<title>Home</title>
+
+	</style>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Bree+Serif|Coiny|Merriweather|Montserrat|Prosto+One|Righteous|Shrikhand|Timmana" rel="stylesheet">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="style\style.css">
+	<link rel="shortcut icon" href="img/favicon.png">
 </head>
-
 <body>
-  <div class="container">
-    <!---HEADER--->
-    <div class="header">
+		<div class="cover-c">
+			<div class="header">
+				<div class="title">
+	        <p class="title-area"></p>
+	      </div>
 
-      <div class="title">
-        <p class="title-area"></p>
-      </div>
+				<div class="nav">
+	        <div class="page-title">HOME</div>
+	        <i class="fas fa-times" onclick="dis()"></i>
+	      </div>
+	    </div>
 
-      <div class="nav">
-        <div class="page-title">HOME</div>
-        <i class="fas fa-times"></i>
-      </div>
-    </div>
-    <hr class="line">
+	    <hr class="line">
 
-    <div class="sections">
-      <ul class="elements">
-        <li class="list">
-          <a href="index.html" class="first">HOME</a>
-        </li>
-        <li class="list">
-          <a href="index.html" class="second">ABOUT</a>
-        </li>
-        <li class="list">
-          <a href="index.html" class="third">CONTACT</a>
-        </li>
-        <li class="list">
-          <a href="index.html" class="fourth">GALLERY</a>
-        </li>
-        <li class="list">
-          <a href="index.html" class="fifth">MEDIA</a>
-        </li>
-      </ul>
-    </div>
+	    <div class="sections">
+	      <ul class="elements">
+	        <li class="list">
+	          <a href="index.html" class="first">HOME</a>
+	        </li>
+	        <li class="list">
+	          <a href="index.html" class="second">ABOUT</a>
+	        </li>
+	        <li class="list">
+	          <a href="index.html" class="third">MEDIA</a>
+	        </li>
+	        <li class="list">
+	          <a href="index.html" class="fourth">GALLERY</a>
+	        </li>
+	        <li class="list">
+	          <a href="index.html" class="fifth">CONTACT</a>
+	        </li>
+	      </ul>
+	    </div>
+		</div>
 
-  </div>
+		<div class="navbar-c">
+			<span class="glyphicon glyphicon-menu-hamburger" onclick="cover()"></span>
+		</div>
+		<div class="wrapper">
+			<div class="image1 image"></div>
+			<div class="image2 image"></div>
+			<div class="image3 image"></div>
+			<div class="image4 image"></div>
+			<div class="image5 image"></div>
+			<div class="image6 image"></div>
+			<div class="image7 image"></div>
+			<div class="image8 image"></div>
+			<div class="image9 image"></div>
+			<div class="image3 image"></div>
+			<div class="image4 image"></div>
+			<div class="image5 image"></div>
+		</div>
+		<img src="img/home/sign.PNG" class="text">
+		<div class="name">
+			<h2>Ganga Narayan Maharana</h2>
+			<h4>Professional Artist</h4>
+		</div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
-  </script>
-
-  <script>
-    /*added seperate script tag from the jquery tag*/
-    $(".first").click(function() {
-      $(".container").css('background-image', 'url(gallery/bg1.jpg)')
-    });
-
-    $(".second").click(function() {
-      $(".container").css('background-image', 'url(gallery/bg2.jpg)')
-    });
-       $(".third").click(function() {
-      $(".container").css('background-image', 'url(gallery/bg2.jpg)')
-    });
-       $(".fourth").click(function() {
-      $(".container").css('background-image', 'url(gallery/bg2.jpg)')
-    });
-       $(".fifth").click(function() {
-      $(".container").css('background-image', 'url(gallery/bg2.jpg)')
-    });
-       $(".fifth").click(function() {
-      $(".page-title").html('Media')
-    });
-    
-  </script>
-
-
-
-
-
-
-
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<script
+ 	src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+</script>
+<script type="text/javascript" src = "js\script.js"></script>
 </body>
-
-
-
-
-
 </html>
