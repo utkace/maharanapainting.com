@@ -31,3 +31,25 @@ $('.cover-c').css('width', '100%');
 function dis(){
 $('.cover-c').css('width', '0%');
 };
+
+/*XXXXXXXXXXXXXXXX-ABOUT-XXXXXXXXXXX*/
+var x=screen.width;
+console.log(x);
+function cover() {
+	$('.cover-c').css('width', '100%');
+};
+function dis() {
+	$('.cover-c').css('width', '0%');
+};
+function bot1() {
+	//$('.section-1').css('width', '100%');
+	$('.section-1').fadeToggle(2000); //give width 100%
+};
+function bot2() {
+	//$('.section-2').css('width', '100%');
+	$('.section-2').fadeToggle(2000);
+};
+function bot3() {
+	//$('.section-3').css('width', '100%');
+	$('.section-3').fadeToggle(2000);
+};
