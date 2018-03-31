@@ -143,11 +143,18 @@ hr.line{
 
 .text-p{
   position: absolute;
+  width: 65%;
   height: 300px;
   top: 29%;
   left: 20%;
   z-index: 0;
   transform: skewY(-5deg);
+}
+
+@media screen and (max-width:  900px){
+  .text-p{
+    height: 250px;
+  }
 }
 
 .glyphicon{
@@ -422,3 +429,43 @@ body,
       text-align: center;
       font-size: 12px;
     }
+
+      @media screen and (max-width: 735px){
+      body,html,.container2{
+        margin:0;
+        padding: 0;
+      }
+
+      .img2,.img3,.img1{
+        margin: auto;
+        margin-top: 15%;
+        width: 100%;
+        background-position: center;
+      } 
+
+      .img1{
+        margin-top: 20%;
+        width: inherit;
+        background-position: center;
+      }
+
+      .text-1,.text-2,.text-3{
+        top: -75px;
+        left: 28%;
+        position: absolute;
+        font-size: 1em;
+        text-align: center;
+        width: 40%;
+      }
+
+      .section-4{
+        margin-top: 6%;
+      }
+
+      .text-4{
+        margin-top: 13%;
+        margin-left: -10%;
+      }
+
+    }   
+
