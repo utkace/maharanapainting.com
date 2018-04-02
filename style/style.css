@@ -27,7 +27,7 @@ html, body {
       background: #0e0c27;
 }
 
-.nav{
+.menu{
     padding: 15px;
     font-size: 25px;
     font-family: montserrat;
@@ -37,7 +37,7 @@ html, body {
     float:right;
 }
 
-.fa-times{
+.glyphicons-remove{
     float: left;
     cursor: pointer;
 }
@@ -150,7 +150,7 @@ hr.line{
   transform: skewY(-5deg);
 }
 
-.glyphicon{
+.glyphicon-menu-hamburger{
   border: 2px solid #bcb5b5;
   font-size: 30px;
   color: #bcb5b5;
@@ -160,7 +160,7 @@ hr.line{
   margin:5px;
 }
 
-.glyphicon:hover{
+.glyphicon-menu-hamburger:hover{
   border: 2px solid #ffffff;
   font-size: 35px;
   color: #ffffff;
