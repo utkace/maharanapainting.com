@@ -157,7 +157,6 @@ hr.line{
   height: 300px;
   top: 29%;
   left: 20%;
-  z-index: 0;
   transform: skewY(-5deg);
 }
 
@@ -259,7 +258,6 @@ body,
       width: 100%;
       left: 0;
       top: 0;
-      z-index: 6;
       opacity: 0.8;
       color: white;
       background-color: #0e0c27;
@@ -273,7 +271,6 @@ body,
       width: 100%;
       right: 0;
       top: 0;
-      z-index: 6;
       opacity: 0.8;
       color: white;
       background-color: #0e0c27;
@@ -287,7 +284,6 @@ body,
       width: 100%;
       left: 0;
       top: 0;
-      z-index: 6;
       opacity: 0.8;
       color: white;
       background-color: #0e0c27;
@@ -526,23 +522,22 @@ body,
 
  @media screen and (max-width:768px){
     #map{
-      left: 0%;
-      width: 100%;
-    }
-    .waf6{
       left: 0;
       width: 100%;
-      margin-top: 65%;
+      position: absolute;
+      top: 82%;
     }
-
-    .over{
-      display: block;
+    .waf6{
+      left: 0.7%;
+      width: 99%;
     }
     .waf3{
+      width: 100.5%;
       position: absolute;
+      bottom: -69%;
     }
 
     .waf1{
-      background-repeat:repeat;
+      background-image: repeat-y;
     }
    }
