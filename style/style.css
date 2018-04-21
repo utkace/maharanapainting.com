@@ -429,7 +429,7 @@ hr.line{
 
     }
 
-    /*XXXXXXXXXXXXXXXXXXXXXContactXXXXXXXXXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXXXXXXXXXXContactXXXXXXXXXXXXXXXXXXXX*/
 
 .waf1{
       padding-top:80px;
@@ -485,19 +485,6 @@ hr.line{
     font-family: montserrat;
     line-height: 5px;
    }
-/*
-   input[type=text]{
-    background-color: rgba(53, 47, 111,0);
-   }
-
-   input[type=email]{
-    background-color: rgba(53, 47, 111,0);
-   }
-   input[type=number]{
-    background-color: rgba(53, 47, 111,0);
-   }
-
-*/
 
  ::-webkit-input-placeholder {
   font-family: montserrat;
@@ -525,3 +512,14 @@ hr.line{
       background-image: repeat-y;
     }
    }
+
+/*************GALLERY************/
+.glyphicon-arrow-left, .glyphicon-arrow-right{
+  font-size: 30px;
+  color:white;
+  transition: margin 2s;
+}
+
+.glyphicon-menu-left:hover{
+  margin-right: 100px;
+}

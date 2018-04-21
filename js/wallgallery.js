@@ -162,7 +162,7 @@ $.fn.imagesLoaded = function( callback ) {
 };
 
 var Gallery = (function() {
-	
+
 	var $gallery = $( '#gr-gallery' ),
 		$itemsContainer = $gallery.children( 'div.gr-main' ).hide(),
 		$items = $itemsContainer.find( 'figure' ),
@@ -206,7 +206,7 @@ var Gallery = (function() {
 
 		this.$el = $( '<div class="gr-room"><div class="gr-wall-main"><div class="gr-floor"></div></div></div>' ).insertAfter( $itemsContainer );
 		// todo: check the real perspective value for widths > x
-		// the problem here is that if the wall's width (window width) is too large, and the perspective value is too small. 
+		// the problem here is that if the wall's width (window width) is too large, and the perspective value is too small.
 		// We will see the background in a certain poitn of time when the wall is rotating (at least in firefox)
 		// we need to adjust the value of the perspective according to the value of the current window's width
 		if( winsize.width > 1300 ) {
@@ -236,7 +236,7 @@ var Gallery = (function() {
 
 			// check on settings.layout
 			this.layout = typeof Gallery.settings.layout != 'undefined' && Gallery.settings.layout instanceof Array && support.transforms3d ? Gallery.settings.layout : this.getLayoutSettings();
-			
+
 			var pos = 0, max = 0, prev = 0,
 				wallsCount = support.transforms3d ? 4 : 1;
 
@@ -253,8 +253,8 @@ var Gallery = (function() {
 
 			// add navigation
 			if( this.totalItems > 1 ) {
-				this.$navPrev = $( '<span class="gr-prev">prev</span>' ).on( 'click', $.proxy( this.navigate, this, 'prev' ) );
-				this.$navNext = $( '<span class="gr-next">next</span>' ).on( 'click', $.proxy( this.navigate, this, 'next' ) );
+				this.$navPrev = $( '<span class="gr-prev glyphicon glyphicon-arrow-left"></span>' ).on( 'click', $.proxy( this.navigate, this, 'prev' ) );
+				this.$navNext = $( '<span class="gr-next glyphicon glyphicon-arrow-right"></span>' ).on( 'click', $.proxy( this.navigate, this, 'next' ) );
 				this.$nav = $( '<nav/>' ).append( this.$navPrev, this.$navNext ).appendTo( $gallery );
 			}
 
@@ -266,9 +266,9 @@ var Gallery = (function() {
 			var self = this;
 			this.$el.on( 'click', 'figure > figcaption', function() {
 				var $caption = $( this ),
-					$item = $caption.parent(), 
+					$item = $caption.parent(),
 					idx = $item.index() - 1;
-				
+
 				if( self.caption === self.currentItem && idx === self.currentItem ) {
 					return false;
 				}
@@ -280,7 +280,7 @@ var Gallery = (function() {
 				else {
 					self.showDescription( $caption, idx );
 				}
-				
+
 			} );
 
 			// click items
@@ -327,9 +327,9 @@ var Gallery = (function() {
 				else {
 					$item.css( 'top', ( wallH - itemH ) / 2 );
 				}
-				
+
 				var itemW = wall.widths[i] || $item.width();
-				
+
 				sumWidths += itemW;
 
 				if( i === 0 ) {
@@ -363,7 +363,7 @@ var Gallery = (function() {
 				transform : 'translateX(0px)',
 				backgroundPosition : this.$mainWall.data( 'translationVal' ) + 'px 0px'
 			} );
-	
+
 			this.walls[ this.lastWall ].$items.css( 'left','+=' + this.$mainWall.data( 'translationVal' ) );
 
 			// update floor
@@ -371,7 +371,7 @@ var Gallery = (function() {
 				width : winsize.width,
 				backgroundPosition : this.$mainWall.data( 'translationVal' ) + 'px 0px'
 			} );
-			
+
 			// set transition again
 			this.$mainWall.css('transition', this.transitionSettings );
 
@@ -388,7 +388,7 @@ var Gallery = (function() {
 				auxWallTransform = support.transforms3d ?
 					'translate3d(' + auxWallInitialTranslationVal + 'px,0px,0px) rotate3d(0,1,0,' + auxWallInitialAngle + 'deg)' :
 					'translate(' + auxWallInitialTranslationVal + 'px)';
-			
+
 			this.$auxWall.css( {
 				transform : auxWallTransform,
 				transformOrigin : dir === 'next' ? '0% 50%' : '100% 50%'
@@ -406,7 +406,7 @@ var Gallery = (function() {
 			}
 
 			setTimeout( $.proxy( function() {
-				
+
 				var translationVal = this.$mainWall.data( 'translationVal' ) || 0,
 					mainWallFinalTranslationVal = dir === 'next' ? - winsize.width : (translationVal - winsize.width) * -1,
 					mainWallFinalAngle = dir === 'next' ? 90 : -90,
@@ -421,18 +421,18 @@ var Gallery = (function() {
 						'translate(' + auxWallFinalTranslationVal + 'px)';
 
 				this.$mainWall.css( 'transform', mainWallFinalTransform );
-				
+
 				this.$auxWall.css( {
 					transition : this.transitionSettings,
 					transform : auxWallFinalTransform
 				} ).on( transEndEventName, $.proxy( function() {
-					
+
 					// set original width
 					this.$auxWall.off( transEndEventName ).css( 'width', this.$auxWall.data( 'width' ) );
 					auxfloor.css( 'width', this.$auxWall.data( 'width' ) );
 
 					if( dir === 'prev' ) {
-						
+
 						// reset transform value and reorganize items accordingly
 						this.$auxWall.css( {
 							transition : 'none',
@@ -442,7 +442,7 @@ var Gallery = (function() {
 
 						var wall = this.walls[ this.currentWall ],
 							$lastItem = wall.$items.eq( wall.itemsCount - 1 );
-						
+
 						// reorganize items accordingly
 						wall.$items.css( 'left', '+=' + ( auxWallWidth - winsize.width ) );
 						auxfloor.css( 'background-position', '0px 0px' );
@@ -477,7 +477,7 @@ var Gallery = (function() {
 			}
 
 			this.walking = true;
-			
+
 			var wall = this.walls[ this.currentWall ],
 				wallItemsCount = wall.itemsCount,
 				changeWall = false;
@@ -521,7 +521,7 @@ var Gallery = (function() {
 
 						this.lastWall = this.currentWall;
 						// update current wall
-						this.currentWall > 0 ? --this.currentWall : this.currentWall = 3;			
+						this.currentWall > 0 ? --this.currentWall : this.currentWall = 3;
 						// update wall
 						wall = this.walls[ this.currentWall ];
 						changeWall = true;
@@ -576,7 +576,7 @@ var Gallery = (function() {
 				else {
 					this.$mainWall.stop().animate( { left : translationVal }, Gallery.settings.speed, $.proxy( afterAnim, this ) );
 				}
-			
+
 			}, this );
 
 			if( this.caption !== -1 ) {
@@ -595,7 +595,7 @@ var Gallery = (function() {
 			Gallery.room = null;
 		},
 		showDescription : function( $descriptionEl, idx ) {
-			
+
 			var showdescfn = $.proxy( function() {
 
 				this.$caption
@@ -604,7 +604,7 @@ var Gallery = (function() {
 					.end()
 					.append( '<div class="gr-caption-inner">' + $descriptionEl.html() + '</div>' )
 					.css( 'transform', 'translateY(0px)' );
-				this.caption = idx;	
+				this.caption = idx;
 
 			}, this );
 
@@ -619,7 +619,7 @@ var Gallery = (function() {
 		hideDescription : function( callback ) {
 
 			this.$caption.css( 'transform', 'translateY(310px)' );
-			
+
 			var hidedescfn = $.proxy( function() {
 				this.$caption.off( transEndEventName );
 				this.caption = -1;
@@ -649,7 +649,7 @@ var Gallery = (function() {
 		this.widths = [];
 	}
 
-	function initEvents() {		
+	function initEvents() {
 		$( window ).off( 'debouncedresize' ).on( 'debouncedresize', function() {
 			winsize = getWindowSize();
 			Gallery.room.destroy();
