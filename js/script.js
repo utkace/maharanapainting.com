@@ -1,5 +1,18 @@
 
 /******* MENU *******/
+
+var ht=$(window).height();
+$('.wrapper').css('height',ht);
+
+function cover(){
+$('html').css('overflow', 'hidden');
+$('.cover-c').css('width', '100%');
+};
+
+function dis(){
+$('.cover-c').css('width', '0%');
+};
+
 $(".first").hover(function() {
   $(".cover-c .sections").css('background-image', 'url(img/menu/bg1.jpg)')
 });
@@ -19,18 +32,6 @@ $(".fourth").hover(function() {
 $(".fifth").hover(function() {
   $(".cover-c .sections").css('background-image', 'url(img/menu/bg5.jpg)')
 });
-
-/******* INDEX *******/
-var ht=$(window).height();
-$('.wrapper').css('height',ht);
-
-function cover(){
-$('.cover-c').css('width', '100%');
-};
-
-function dis(){
-$('.cover-c').css('width', '0%');
-};
 
 /*XXXXXXXXXXXXXXXX-ABOUT-XXXXXXXXXXX*/
 var x=screen.width;
@@ -57,7 +58,7 @@ function bot3() {
 /*XXXXXXXXXXXXXXX-CONTACT-XXXXXXXXXXXXXXX*/
 function myMap() {
   var mapCanvas = document.getElementById("map");
-  var myCenter = new google.maps.LatLng(28.5677, 77.2433); 
+  var myCenter = new google.maps.LatLng(28.5677, 77.2433);
   var mapOptions = {center: myCenter, zoom: 15};
   var map = new google.maps.Map(mapCanvas,mapOptions);
   var marker = new google.maps.Marker({
@@ -66,6 +67,3 @@ function myMap() {
   });
   marker.setMap(map);
 };
-
-
-
