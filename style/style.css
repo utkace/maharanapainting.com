@@ -1,7 +1,14 @@
-html, body {
-  padding: 0px;
-  margin: 0px;
-}
+body, html {
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      font-size: 20px;
+      font-family: montserrat;
+      font-weight: 400;
+      line-height: 1.6em;
+      color: #666;
+      background-color: #0e0c27;
+    }
 
 /********MENU*********/
 .cover-c{
@@ -27,6 +34,7 @@ html, body {
 
 
 .header{
+
       background: #0e0c27;
       background-blend-mode: screen;
       z-index: 5;
@@ -45,10 +53,10 @@ html, body {
 .glyphicon-remove{
     cursor: pointer;
     z-index: 500;
+    transition: font-size 0.5s;
 }
 
 .glyphicon-remove:hover{
-  color: red;
   font-size: 40px;
 }
 
@@ -59,7 +67,6 @@ hr.line{
 	box-shadow: 0 10px 10px -10px #FAFAFA inset;
 }
 .sections{
-
     list-style-type: none;
     text-align: center;
      height: 500px;
@@ -201,17 +208,6 @@ hr.line{
 
 
 /* XXXXXXX--ABOUT--XXXXXXXXXXXXXXXX */
-body,
-    html {
-      height: 100%;
-      margin: 0;
-      font-size: 20px;
-      font-family: montserrat;
-      font-weight: 400;
-      line-height: 1.6em;
-      color: #666;
-      background-color: #0e0c27;
-    }
     .container2 {
       background-color: #0e0c27;
       display: inline;
@@ -235,7 +231,7 @@ body,
     }
     .img1 {
       margin-top: -3%;
-      padding-top: 0;                       
+      padding-top: 0;
       margin-right: 0.4%;
       background-position: top left;
       background-image: url(../img/About/img1.JPG);
@@ -294,8 +290,8 @@ body,
     .inside {
       padding: 6%;
     }
-    
-    
+
+
     .text-1 {
       position: absolute;
       color: #ffffff;
@@ -381,6 +377,7 @@ body,
       width: 100%;
       background-color: #100a58;
     }
+
     .foot {
       width: 100%;
       bottom: 0px;
@@ -403,7 +400,7 @@ body,
         margin-top: 15%;
         width: 100%;
         background-position: center;
-      } 
+      }
 
       .img1{
         margin-top: 20%;
@@ -429,40 +426,34 @@ body,
         margin-left: -10%;
       }
 
-    }   
+
+    }
 
     /*XXXXXXXXXXXXXXXXXXXXXContactXXXXXXXXXXXXXXXXXXXX*/
 
 .waf1{
-      position: relative;
-      height: 662px;
+      padding-top:80px;
       width: 100%;
       background:url(../img/contact/CONTACT.JPG);
-      background-position: center;  
+      background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
       background-blend-mode: multiply;
       background-color: #352f6f;
     }
-    
 
-    .waf2{
-      color: #ffffff;
-      top: 30%;
-      position: absolute;
-    }
+  .waf2{
+    color: #ffffff;
+  }
 
    .waf3{
-    left: -0.6%;
-    width: 101.3%;
-    position: relative;
-    bottom: -81.5%;
     color: #ffffff;
     background-color: #352f6f;
    }
 
    .waf4{
     text-align: center;
+
    }
 
    .waf5{
@@ -473,22 +464,15 @@ body,
     text-decoration: underline;
    }
 
-   
    #map{
-    left: 3.4%;
-    top: 11%;
-    position: absolute;
-    width: 45%;
-    height: 65%;
+    height: 400px;
+    width: auto;
     background-color: #352f6f;
     background-blend-mode: multiply;
     opacity: 0.65;
    }
 
    .waf6{
-    right: 0.4%;
-    top:9%;
-    position: absolute;
     width: 45%;
     height:65%;
     background:transparent;
@@ -512,7 +496,7 @@ body,
    input[type=number]{
     background-color: rgba(53, 47, 111,0);
    }
- 
+
 */
 
  ::-webkit-input-placeholder {
