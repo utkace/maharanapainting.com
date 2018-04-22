@@ -17,7 +17,7 @@ body, html {
   width: 0%;
   left: 0;
   top: 0;
-  z-index: 4;
+  z-index: 40;
   overflow: hidden;
   background-color: #1b3e9a;
 
@@ -34,8 +34,8 @@ body, html {
 
 
 .header{
-
-      background: #0e0c27;
+      height: 70px;
+      background: #173689;
       background-blend-mode: screen;
       z-index: 5;
 }
@@ -507,3 +507,35 @@ hr.line{
 .glyphicon-menu-left:hover{
   margin-right: 100px;
 }
+
+/******************MEDIA**************/
+    .container{
+      position: relative;
+    }
+
+    #carousel{
+      height: auto;
+      position: absolute;
+    }
+
+    #prev{
+      position: absolute;
+      margin-top: 38%;
+      margin-left: 43%;
+      cursor: pointer;
+      font-size: 50px;
+      color: white;
+    }
+
+    #next{
+      position: absolute;
+      margin-top: 38%;
+      margin-left:  53%;
+      cursor: pointer;
+      font-size: 50px;
+      color: white;
+
+    }
+
+    
+
