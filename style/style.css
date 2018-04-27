@@ -514,14 +514,14 @@ hr.line{
     }
 
     #carousel{
-      height: auto;
       position: absolute;
+      width: 100%;
     }
 
     #prev{
       position: absolute;
-      margin-top: 38%;
-      margin-left: 43%;
+      margin-top: 450px;
+      margin-left: 503px;
       cursor: pointer;
       font-size: 50px;
       color: white;
@@ -529,13 +529,23 @@ hr.line{
 
     #next{
       position: absolute;
-      margin-top: 38%;
-      margin-left:  53%;
+       margin-top: 450px;
+      margin-left: 633px;
       cursor: pointer;
       font-size: 50px;
       color: white;
 
     }
 
-    
+    .tre{
+      height: 100%;
+      width: auto;
+      background:url(../img/About/img2.JPG);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-blend-mode: multiply;
+      background-color: #352f6f;
+    }
 
+   
