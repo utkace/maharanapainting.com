@@ -33,6 +33,7 @@ $(".fifth").hover(function() {
   $(".cover-c .sections").css('background-image', 'url(img/menu/bg5.jpg)')
 });
 
+
 /*XXXXXXXXXXXXXXXX-ABOUT-XXXXXXXXXXX*/
 var x=screen.width;
 console.log(x);
@@ -91,6 +92,7 @@ $(document).ready(function () {
         });
 
         $('#prev').bind('click', function () {
+          console.log('hllo');
           carousel.prev();
           return false
         });
@@ -107,3 +109,41 @@ $(document).ready(function () {
         });
 
       });
+
+
+
+/*XXXXXXXXXXXXXGalleryXXXXXXXXXXXXXXXXXXXXXX*/
+      var cont="";
+      for (var i = 1; i <= 26; i++) {
+        cont += '<a data-fancybox="gallery" href="img/gallery/im/'+i+'.JPG" data-caption="Artist wants to convey..">'+'<img src="img/gallery/im/'+i+'.JPG"></a>' ;
+        console.log(cont);
+      }
+      document.querySelector('.wrap').innerHTML = cont;
+    
+            /*if we click on button 2017 */
+
+            $('.ima2').click(function (){
+              console.log("hello");
+              cont="";
+              for (var i = 1; i <= 10; i++) {
+        cont += '<a data-fancybox="gallery" href="img/gallery/2017/'+i+'.JPG" data-caption="Artist wants to convey..">'+'<img src="img/gallery/2017/'+i+'.JPG"></a>' ;
+        console.log(cont);
+      }
+      document.querySelector('.wrap').innerHTML = cont;
+    
+            });
+
+            $('.ima3').click(function (){
+              console.log("hello");
+              cont="";
+              for (var i = 11; i <= 26; i++) {
+        cont += '<a data-fancybox="gallery" href="img/gallery/2018/'+i+'.JPG" data-caption="Artist wants to convey..">'+'<img src="img/gallery/2018/'+i+'.JPG"></a>' ;
+        console.log(cont);
+      }
+      document.querySelector('.wrap').innerHTML = cont;
+    
+            });
+
+            $('.ima1').click(function(){
+              location.reload();  
+            });
