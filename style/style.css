@@ -1,13 +1,13 @@
 body, html {
-      height: 100%;
-      margin: 0px;
-      padding: 0px;
-      font-size: 20px;
-      font-family: montserrat;
-      font-weight: 400;
-      line-height: 1.6em;
-      color: #666;
-      background-color: #0e0c27;
+      height: 100% !important;
+      margin: 0px !important;
+      padding: 0px !important;
+      font-size: 20px !important;
+      font-family: montserrat !important;
+      font-weight: 400 !important;
+      line-height: 1.6em !important;
+      color: #666 !important;
+      background-color: #0e0c27 !important;
     }
 
 /********MENU*********/
@@ -120,6 +120,7 @@ hr.line{
   background-color: #352f6f;
   transition: background-color 1s ease-in-out;
 }
+
 .image:hover{
   background-color: white;
 }
@@ -136,10 +137,10 @@ hr.line{
   background-image: url(../img/home/04.JPG);
 }
 .image5{
-  background-image: url(../img/home/05.JPG);
-}
-.image6{
-  background-image: url(../img/home/06.JPG);
+  background-image: url(../img/home/05.JPG);                                             
+}                                                                                      
+.image6{                                                                      
+  background-image: url(../img/home/06.JPG);                                          
 }
 .image7{
   background-image: url(../img/home/07.JPG);
@@ -157,7 +158,7 @@ hr.line{
   opacity: 1;
   z-index: 2;
 }
-
+                                                                                              
 .text-p{
   position: absolute;
   width: 65%;
@@ -379,14 +380,14 @@ hr.line{
     }
 
     .foot {
-      width: 100%;
-      bottom: 0px;
-      position:absolute;
-      background-color: #040311;
-      padding: 1%;
-      color: white;
-      text-align: center;
-      font-size: 12px;
+      width: 100% !important;
+      bottom: 0px !important;
+      position:absolute !important;
+      background-color: #040311 !important;
+      padding: 1% !important;
+      color: white !important;
+      text-align: center !important;
+      font-size: 12px !important;
     }
 
       @media screen and (max-width: 735px){
@@ -539,3 +540,54 @@ hr.line{
 
     
 
+/*XXXXXXXXXXXXGALLERY GRID XXXXXXXXXXXXXXXXXXXXXXX*/
+.up1{
+  position: relative;
+}
+.up{
+  position: absolute; 
+  margin-left: 42%;
+  margin-top: 30px;
+}
+.btn-secondary {
+    font-size: 25px !important; 
+    background-color: #170F2B !important;
+    border-radius: 16px !important;
+    transition: background-color 1s ease-in-out !important;
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+.btn-secondary:hover{
+  background-color: white !important;
+  color:black !important;
+}
+
+.wrap{
+  position: absolute;
+  margin-top: 120px;
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(4,2fr);
+  grid-gap: 1.3em;
+}
+
+
+.wrap > a img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;  
+  opacity: 0.2 !important;
+  transition: all 1.5s ease-in-out !important;
+}
+ 
+/*wasn't working there img*/
+ .wrap> a:hover img:hover{
+  opacity: 1 !important;
+  transform: scale3d(1.1,1.16,1.15) !important;
+}
+
+.wrap > a{
+  text-decoration: none;
+  outline: none;
+}
