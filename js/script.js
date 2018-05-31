@@ -111,9 +111,8 @@ $(document).ready(function () {
 /*XXXXXXXXXXXXXGalleryXXXXXXXXXXXXXXXXXXXXXX*/
       var cont="";
       for (var i = 1; i <= 26; i++) {
-        cont += `<a data-fancybox="gallery" href="img/gallery/im/${i}.JPG" data-caption="Artist wants to convey.."><img src="img/gallery/im/${i}.JPG"></a>` ;
+        cont += '<a data-fancybox="gallery" href="img/gallery/im/'+i+'.JPG" data-caption="Artist wants to convey..">'+'<img src="img/gallery/im/'+i+'.JPG"></a>' ;
       }
-
       document.querySelector('.wrap').innerHTML = cont;
 
             /*if we click on button 2017 */
@@ -122,8 +121,9 @@ $(document).ready(function () {
               console.log("hello");
               cont="";
               for (var i = 1; i <= 10; i++) {
-                cont += '<a data-fancybox="gallery" href="img/gallery/2017/'+i+'.JPG" data-caption="Artist wants to convey..">'+'<img src="img/gallery/2017/'+i+'.JPG"></a>' ;
-          }
+        cont += '<a data-fancybox="gallery" href="img/gallery/2017/'+i+'.JPG" data-caption="Artist wants to convey..">'+'<img src="img/gallery/2017/'+i+'.JPG"></a>' ;
+        console.log(cont);
+      }
       document.querySelector('.wrap').innerHTML = cont;
 
             });
