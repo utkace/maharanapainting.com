@@ -1,7 +1,7 @@
 /*XXXXXXXXXXXXXGalleryXXXXXXXXXXXXXXXXXXXXXX*/
       let cont=" ";
       for (var i = 1; i <= 26; i++) {
-        cont += '<a data-fancybox="gallery" href="img/gallery/im/'+i+'.JPG" data-caption="Artist wants to convey..">'+'<img src="img/gallery/im/'+i+'.JPG"></a>' ;
+        cont += '<a data-fancybox="gallery" href="img/gallery/im/'+i+'.jpg" data-caption="Artist wants to convey..">'+'<img src="img/gallery/im/'+i+'.jpg"></a>' ;
       }
       document.querySelector('.wrap').innerHTML = cont;
 
@@ -11,7 +11,7 @@
               console.log("hello");
               cont="";
               for (var i = 1; i <= 10; i++) {
-        cont += '<a data-fancybox="gallery" href="img/gallery/2017/'+i+'.JPG" data-caption="Artist wants to convey..">'+'<img src="img/gallery/2017/'+i+'.JPG"></a>' ;
+        cont += '<a data-fancybox="gallery" href="img/gallery/2017/'+i+'.jpg" data-caption="Artist wants to convey..">'+'<img src="img/gallery/2017/'+i+'.jpg"></a>' ;
         console.log(cont);
       }
       document.querySelector('.wrap').innerHTML = cont;
@@ -21,7 +21,7 @@
             $('.ima3').click(function (){
               cont="";
               for (var i = 11; i <= 26; i++) {
-        cont += '<a data-fancybox="gallery" href="img/gallery/2018/'+i+'.JPG" data-caption="Artist wants to convey..">'+'<img src="img/gallery/2018/'+i+'.JPG"></a>' ;
+        cont += '<a data-fancybox="gallery" href="img/gallery/2018/'+i+'.jpg" data-caption="Artist wants to convey..">'+'<img src="img/gallery/2018/'+i+'.jpg"></a>' ;
         console.log(cont);
       }
       document.querySelector('.wrap').innerHTML = cont;
